@@ -1,0 +1,135 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: gtdtxt
+scopeName: source.gtdtxt
+fileTypes: [gtd, getting-things-done, todo, gtdtxt, gtd.txt]
+uuid: f25c1543-602f-487e-82a4-37cd45899488
+
+# support.type.source.rust yellow
+# keyword.other.source.rust purple
+# entity.name.function.source.rust blue
+# constant.numeric orange
+
+patterns:
+- name: constant.numeric.dividers
+  match: '^(-|=|\*|_|:|_|~)+'
+  captures:
+    '1': {name: constant.numeric}
+
+- name: entity.name.function.source.task
+  match: '(?i)^(task:|action:|todo:|item:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.task}
+    '2': {name: variable}
+
+- name: entity.name.function.source.due
+  match: '(?i)^(due:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.due}
+    '2': {name: variable}
+
+- name: entity.name.function.source.project
+  match: '(?i)^(project:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.project}
+    '2': {name: variable}
+
+- name: entity.name.function.source.defer
+  match: '(?i)^(defer:|defer until:|defer till:|hide:|hidden:|hide till:|hide until:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.defer}
+    '2': {name: variable}
+
+- name: entity.name.function.source.priority
+  match: '(?i)^(priority:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.priority}
+    '2': {name: variable}
+
+- name: entity.name.function.source.added
+  match: '(?i)^(added:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.added}
+    '2': {name: variable}
+
+- name: entity.name.function.source.flag
+  match: '(?i)^(flag:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.flag}
+    '2': {name: variable}
+
+- name: entity.name.function.source.status
+  match: '(?i)^(status:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.status}
+    '2': {name: variable}
+
+- name: entity.name.function.source.tag
+  match: '(?i)^(tag:|tags:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.tag}
+    '2': {name: variable}
+
+- name: entity.name.function.source.context
+  match: '(?i)^(context:|contexts:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.context}
+    '2': {name: variable}
+
+- name: entity.name.function.source.time
+  match: '(?i)^(time:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.time}
+    '2': {name: variable}
+
+- name: entity.name.function.source.include
+  match: '(?i)^(include:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.include}
+    '2': {name: variable}
+
+- name: entity.name.function.source.id
+  match: '(?i)^(id:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.id}
+    '2': {name: variable}
+
+- name: entity.name.function.source.created
+  match: '(?i)^(created:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.created}
+    '2': {name: variable}
+
+- name: entity.name.function.source.date
+  match: '(?i)^(date:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.date}
+    '2': {name: variable}
+
+- name: comment.line.hash-bang
+  match: |-
+    (#).*$
+    ?
+  captures:
+    '1': {name: punctuation.definition.comment}
+
+- name: comment.line.double-slash
+  match: |-
+    (//).*$
+    ?
+  captures:
+    '1': {name: punctuation.definition.comment}
+
+- name: comment.line.semi-colon
+  match: |-
+    (;).*$
+    ?
+  captures:
+    '1': {name: punctuation.definition.comment}
+
+- name: comment.block
+  begin: /\*
+  beginCaptures:
+    '1': {name: punctuation.definition.comment.begin}
+  end: \*/
+  endCaptures:
+    '1': {name: punctuation.definition.comment.end}
