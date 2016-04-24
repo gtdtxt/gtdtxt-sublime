@@ -243,25 +243,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.source.include</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)^(include:)(.*)$.*</string>
-			<key>name</key>
-			<string>entity.name.function.source.include</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
 					<string>entity.name.function.source.id</string>
 				</dict>
 				<key>2</key>
@@ -312,6 +293,44 @@
 			<string>(?i)^(date:)(.*)$.*</string>
 			<key>name</key>
 			<string>entity.name.function.source.date</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.source.include</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)^(include:)(.*)$.*</string>
+			<key>name</key>
+			<string>entity.name.function.source.include</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.source.file_no_done_tasks</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)^(file_no_done_tasks:)(.*)$.*</string>
+			<key>name</key>
+			<string>entity.name.function.source.file_no_done_tasks</string>
 		</dict>
 		<dict>
 			<key>captures</key>
