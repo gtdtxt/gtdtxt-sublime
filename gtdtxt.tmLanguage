@@ -281,6 +281,25 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>entity.name.function.source.done</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)^(done:)(.*)$.*</string>
+			<key>name</key>
+			<string>entity.name.function.source.done</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.function.source.date</string>
 				</dict>
 				<key>2</key>
