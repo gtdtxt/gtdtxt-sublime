@@ -53,6 +53,39 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>entity.name.function.source.note</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)^(note:|notes:|description:|desc:)(.*)$.*</string>
+			<key>name</key>
+			<string>entity.name.function.source.note</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)(http[s]?://[\S]*)</string>
+			<key>name</key>
+			<string>entity.name.function.source.http</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.function.source.due</string>
 				</dict>
 				<key>2</key>
