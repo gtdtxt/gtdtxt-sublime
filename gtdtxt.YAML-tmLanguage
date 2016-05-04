@@ -39,6 +39,12 @@ patterns:
     '1': {name: entity.name.function.source.due}
     '2': {name: variable}
 
+- name: entity.name.function.source.chain
+  match: '(?i)^(chain:)(.*)$.*'
+  captures:
+    '1': {name: entity.name.function.source.chain}
+    '2': {name: variable}
+
 - name: entity.name.function.source.project
   match: '(?i)^(project:)(.*)$.*'
   captures:
