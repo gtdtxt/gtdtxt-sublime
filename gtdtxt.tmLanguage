@@ -413,7 +413,26 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)^(file_no_done_tasks:)(.*)$.*</string>
+			<string>(?i)^(file_no_done_tasks:|require no done tasks:|require no completed tasks:|require no finished tasks:)(.*)$.*</string>
+			<key>name</key>
+			<string>entity.name.function.source.file_no_done_tasks</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.source.file_no_done_tasks</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)^(required project prefix:|require project prefix:|require_project_prefix:|required_project_prefix:)(.*)$.*</string>
 			<key>name</key>
 			<string>entity.name.function.source.file_no_done_tasks</string>
 		</dict>
