@@ -34,6 +34,20 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>support.type.source.current</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)^(current).*$.*</string>
+			<key>name</key>
+			<string>entity.name.function.source.task</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>entity.name.function.source.task</string>
 				</dict>
 				<key>2</key>
