@@ -8,7 +8,7 @@ gtdtxt-sublime
 Installation
 ============
 
-The easiest way to install this package is through [Package Control](http://wbond.net/sublime_packages/package_control).
+~~The easiest way to install this package is through [Package Control](http://wbond.net/sublime_packages/package_control).~~ **(not yet published)**
 
 Otherwise, **if you have Git**: clone the repository in your Sublime Text "Packages" directory (Sublime Menu -> Preferences -> Browse Packages…).
 
